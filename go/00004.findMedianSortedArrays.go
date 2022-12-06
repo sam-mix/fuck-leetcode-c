@@ -2,6 +2,9 @@ package lib
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	m, n := len(nums1), len(nums2)
+	if m+n <= 0 {
+		return 0.0
+	}
 	if m > n {
 		return findMedianSortedArrays(nums2, nums1)
 	}

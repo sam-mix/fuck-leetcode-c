@@ -4,11 +4,6 @@ import (
 	"testing"
 )
 
-func assertEqual(t *testing.T, a, b interface{}) {
-	if a != b {
-		t.Errorf("Not Equal. %d %d", a, b)
-	}
-}
 func TestLengthOfLongestSubstring(t *testing.T) {
 	cases := []struct {
 		in  string
@@ -29,7 +24,7 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 	}
 	for _, v := range cases {
 		len := lengthOfLongestSubstring(v.in)
-		assertEqual(t, v.out, len)
+		assertEqual(t, v.out, len, v.in)
 	}
 
 }
