@@ -17,6 +17,13 @@ func TestIsMatch(t *testing.T) {
 			}{"", ".*"},
 			true,
 		},
+		{
+			struct {
+				str string
+				p   string
+			}{"abcd", ".*"},
+			true,
+		},
 	}
 	for _, v := range cases {
 		assertEqual(t, v.out, isMatch(v.in.str, v.in.p), v.in)
