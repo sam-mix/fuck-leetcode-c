@@ -32,7 +32,3 @@ func intToRoman(num int) string {
 	}
 	return string(roman)
 }
-
-func IntToRoman(num int) string {
-	return intToRoman(num)
-}
