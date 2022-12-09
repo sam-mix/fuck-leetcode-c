@@ -19,4 +19,11 @@ func main() {
 	s = s[0 : len(s)-1]
 	fmt.Println(s)
 	fmt.Println(len(s))
+	mx(s)
+	fmt.Println(s)
+
+}
+
+func mx(l []int) {
+	l[0] = 5
 }
