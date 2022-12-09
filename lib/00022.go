@@ -1,6 +1,8 @@
 package lib
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func generateParenthesis(n int) []string {
 	res := []string{}
