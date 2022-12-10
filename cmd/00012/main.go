@@ -21,7 +21,9 @@ func main() {
 	fmt.Println(len(s))
 	mx(s)
 	fmt.Println(s)
-
+	ss := "abc"
+	ss = "s" + ss
+	fmt.Println(ss)
 }
 
 func mx(l []int) {
