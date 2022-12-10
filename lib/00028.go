@@ -40,6 +40,7 @@ package lib
 // 	return -1
 // }
 
+// kmp
 func strStr(haystack, needle string) int {
 	n, m := len(haystack), len(needle)
 	if m == 0 {
