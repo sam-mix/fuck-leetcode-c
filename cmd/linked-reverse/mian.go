@@ -35,23 +35,23 @@ func main() {
 	printList(after)
 }
 
-func reverse(head *listNode) (newHead *listNode) {
-	if head == nil || head.next == nil {
-		return head
-	}
-	next := head.next
-	head.next = nil
-	newHead = reverse(next)
-	next.next = head
-	return
-}
-
 // func reverse(head *listNode) (newHead *listNode) {
-// 	for head != nil {
-// 		next := head.next
-// 		head.next = newHead
-// 		newHead = head
-// 		head = next
+// 	if head == nil || head.next == nil {
+// 		return head
 // 	}
+// 	next := head.next
+// 	head.next = nil
+// 	newHead = reverse(next)
+// 	next.next = head
 // 	return
 // }
+
+func reverse(head *listNode) (newHead *listNode) {
+	for head != nil {
+		next := head.next
+		head.next = newHead
+		newHead = head
+		head = next
+	}
+	return
+}

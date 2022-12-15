@@ -2,6 +2,13 @@ package lib
 
 import "testing"
 
+// Definition for a binary tree node.
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
 func max(arr ...int) int {
 	m := arr[0]
 	for i := 1; i < len(arr); i++ {

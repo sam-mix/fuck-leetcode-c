@@ -8,13 +8,14 @@ package lib
  * }
  */
 func deleteDuplicates(head *ListNode) *ListNode {
-	cur, pre := head, head
-	for cur != nil {
-		if cur != pre && cur.Val == pre.Val {
-			pre.Next = cur.Next
-			cur = pre.Next
+	if head == nil {
+		return nil
+	}
+	cur := head
+	for cur.Next != nil {
+		if cur.Val == cur.Next.Val {
+			cur.Next = cur.Next.Next
 		} else {
-			pre = cur
 			cur = cur.Next
 		}
 	}
