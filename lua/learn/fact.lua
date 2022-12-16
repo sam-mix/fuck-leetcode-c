@@ -7,7 +7,11 @@ function fact(n)
     end
 end
 
-n = io.read("*n")
-print(fact(n))
+-- n = io.read("*n")
+-- print(fact(n))
+
+for i = 0, 5 do
+    print(i, fact(i))
+end
 
 -- lua "/Users/m/fuck-leetcode-c/lua/learn/fact.lua"

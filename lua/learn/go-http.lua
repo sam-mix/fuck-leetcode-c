@@ -1,0 +1,6 @@
+go = require('golib')
+http = go.import('net/http')
+http.HandleFunc('/hello/', function(w, r)
+    w.Write('hi there from Lua! You requested ' .. r.URL.Path)
+end)
+http.ListenAndServe(':7777')
