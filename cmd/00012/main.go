@@ -21,9 +21,21 @@ func main() {
 	fmt.Println(len(s))
 	mx(s)
 	fmt.Println(s)
-	ss := "abc"
+	ss := "Aabc"
 	ss = "s" + ss
 	fmt.Println(ss)
+	for _, v := range ss {
+		fmt.Println(v)
+	}
+	fmt.Println("")
+	fmt.Println('a')
+	fmt.Println('A')
+
+	fmt.Println("")
+	fmt.Println('0')
+
+	a := append([]int{}, 1)
+	fmt.Println(a)
 }
 
 func mx(l []int) {
