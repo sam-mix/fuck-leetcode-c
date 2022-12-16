@@ -1,3 +1,7 @@
+github.com/arnodel/golua v0.0.0-20220703095808-4f77264a3871 h1:yV9MltJlc0tCivzrKO7eQwUx9cNMkyQqofbxfyN6P9E=
+github.com/arnodel/golua v0.0.0-20220703095808-4f77264a3871/go.mod h1:9jzpYPiU2is0HVGCiuIOBSXdergHUW44IEjmuN1UrIE=
+github.com/arnodel/strftime v0.1.6 h1:0hc0pUvk8KhEMXE+htyaOUV42zNcf/csIbjzEFCJqsw=
+github.com/arnodel/strftime v0.1.6/go.mod h1:5NbK5XqYK8QpRZpqKNt4OlxLtIB8cotkLk4KTKzJfWs=
 github.com/yuin/gopher-lua v0.0.0-20221210110428-332342483e3f h1:wihIB0V/mGpVYrL8I7n/WxVqWnP07CBXZ5uCgxUP1tI=
 github.com/yuin/gopher-lua v0.0.0-20221210110428-332342483e3f/go.mod h1:GBR0iDaNXjAgGg9zfCvksxSRnQx76gclCIb7kdAd1Pw=
 layeh.com/gopher-json v0.0.0-20201124131017-552bb3c4c3bf h1:rRz0YsF7VXj9fXRF6yQgFI7DzST+hsI3TeFSGupntu0=
